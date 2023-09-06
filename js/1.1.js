@@ -1,4 +1,4 @@
-const fs = require("fs");
+const { getData } = require("./_data-extractor");
 
 let curSum = 0;
 let maxSoFar = 0;
@@ -11,7 +11,7 @@ let maxSoFar = 0;
 5. Return the calories
 */
 
-const data = fs.readFileSync("../data/1.txt", "utf-8").toString().split("\r\n");
+const data = getData("../data/1.txt");
 
 data.forEach((elem) => {
   let num = Number(elem);
