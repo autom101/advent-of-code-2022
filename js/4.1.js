@@ -25,11 +25,6 @@ data.forEach((elem) => {
   const secondSetEnclosesFirst =
     secondStart <= firstStart && secondEnd >= firstEnd;
 
-  const firstSetIntersectsSecond =
-    firstStart <= secondStart && secondEnd >= firstEnd;
-  const secondSetIntersectsFirst =
-    secondStart <= firstStart && firstEnd >= secondEnd;
-
   if (firstSetEnclosesSecond) {
     /*     console.log("first encloses: ", elem);
      */ total++;
